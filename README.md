@@ -1,0 +1,63 @@
+
+Enables Lanterna support
+------------------------
+
+Plugin page: [http://artifacts.griffon-framework.org/plugin/lanterna](http://artifacts.griffon-framework.org/plugin/lanterna)
+
+Enables [Lanterna][1] as UI toolkit.
+
+Lanterna is a Java library allowing you to write easy semi-graphical user interfaces
+in a text-only environment, very similar to the C library curses but with more
+functionality. Lanterna supports xterm compatible terminals and terminal emulators
+such as konsole, gnome-terminal, putty, xterm and many more. One of the main benefits
+of lanterna is that it's not dependent on any native library but runs 100% in pure Java.
+
+Usage
+-----
+
+The following nodes will become available on a View script upon installing this plugin
+
+| *Name*           | *Type*                                                |
+| ---------------- | ----------------------------------------------------- |
+| action           | `griffon.lanterna.widgets.MutableAction`              |
+| actionListBox    | `com.googlecode.lanterna.gui.component.ActionListBox` |
+| actions          | `java.util.List`                                      |
+| application      | `com.googlecode.lanterna.gui.Window`                  |
+| bean             | `java.lang.Object`                                    |
+| borderLayout     | `com.googlecode.lanterna.gui.layout.BorderLayout`     |
+| button           | `griffon.lanterna.widgets.MutableButton`              |
+| checkBox         | `com.googlecode.lanterna.gui.component.CheckBox`      |
+| container        | `com.googlecode.lanterna.gui.Component`               |
+| emptySpace       | `com.googlecode.lanterna.gui.component.EmptySpace`    |
+| hbox             | `com.googlecode.lanterna.gui.component.Panel`         |
+| horisontalLayout | `com.googlecode.lanterna.gui.layout.HorisontalLayout` |
+| horizontalLayout | `com.googlecode.lanterna.gui.layout.HorisontalLayout` |
+| label            | `com.googlecode.lanterna.gui.component.Label`         |
+| list             | `java.util.List`                                      |
+| panel            | `com.googlecode.lanterna.gui.component.Panel`         |
+| passwordBox      | `com.googlecode.lanterna.gui.component.PasswordBox`   |
+| progressBar      | `com.googlecode.lanterna.gui.component.ProgressBar`   |
+| table            | `com.googlecode.lanterna.gui.component.Table`         |
+| textArea         | `com.googlecode.lanterna.gui.component.TextArea`      |
+| textBox          | `com.googlecode.lanterna.gui.component.TextBox`       |
+| vbox             | `com.googlecode.lanterna.gui.component.Panel`         |
+| verticalLayout   | `com.googlecode.lanterna.gui.layout.VerticalLayout`   |
+| widget           | `com.googlecode.lanterna.gui.Component`               |
+
+The following packages are automatically imported in Views
+
+ * com.googlecode.lanterna.gui
+ * com.googlecode.lanterna.gui.component
+ * com.googlecode.lanterna.gui.dialog
+ * com.googlecode.lanterna.gui.layout
+ * com.googlecode.lanterna.gui.listener
+ * com.googlecode.lanterna.input
+
+Configuration
+-------------
+
+This plugin provides custom `WindowManager` and `GriffonControllerActionManager`
+implementations.
+
+
+[1]: http://code.google.com/p/lanterna/
